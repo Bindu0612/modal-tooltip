@@ -7,6 +7,7 @@ const HomePageDummy = (props) => {
     console.log(props)
     const [modal, setModal] = useState(false);
     const [tooltipOpen, setTooltipOpen] = useState(false);
+    
 
     const toggle = () => {
         setModal(!modal);
