@@ -1,3 +1,37 @@
 .headerClass{
     background-color: rgb(247, 225, 33)
 }
+
+.tooltip-link{
+   color:blue;
+   font-weight:bold
+}
+.heading{
+    font-weight: bold;
+}
+
+.buttonStyle {
+    width: 50%;
+    margin: 0 100px 0 100px;
+    border-radius: 0 !important;
+    margin-top:20px;
+    font-weight:bold
+}
+
+.footer{
+    margin : 0 !important;
+    font-weight:bolder;
+    text-align: center;
+}
+
+/* .symptoms-main{
+    background-color: white;
+} */
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
