@@ -34,7 +34,7 @@ const HomePage = (props) => {
   return (
     <>
       <div className="container">
-        <Button color="danger" onClick={toggle} className="homeButton"> {buttonLabel} </Button>
+        <Button color="danger" onClick={toggle}> {buttonLabel} </Button>
 
         <Modal isOpen={modal} toggle={toggle} >
 
