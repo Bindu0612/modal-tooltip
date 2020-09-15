@@ -34,8 +34,8 @@ const HomePage = (props) => {
   return (
     <>
       <div className="container">
-        <Button color="danger" onClick={toggle}> {buttonLabel} </Button>
-        
+        <Button color="danger" onClick={toggle} className="homeButton"> {buttonLabel} </Button>
+
         <Modal isOpen={modal} toggle={toggle} >
 
           <ModalHeader toggle={toggle} className="headerClass"> {COVID19ModalHeaderText} </ModalHeader>
