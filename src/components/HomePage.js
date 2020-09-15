@@ -41,7 +41,7 @@ const HomePage = (props) => {
 
           <ModalBody>
             <div dangerouslySetInnerHTML={modalData()} />
-            <Tooltip placement="right" isOpen={tooltipOpen} target="symptoms" toggle={toolTip}> <div dangerouslySetInnerHTML={tooltipData()} /> </Tooltip>
+            <Tooltip placement="right" isOpen={tooltipOpen} target="symptoms" toggle={toolTip} className = "tooltipStyle"> <div dangerouslySetInnerHTML={tooltipData()} /> </Tooltip>
             <Button outline color="primary" size="md-bold" onClick={toggle} className = "buttonStyle"> {COVID19ModalButtonText} </Button>
           </ModalBody>
         

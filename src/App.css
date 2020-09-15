@@ -24,9 +24,10 @@
     text-align: center;
 }
 
-/* .symptoms-main{
-    background-color: white;
-} */
+.symptoms-main{
+    color:black;
+    background-color:yellow
+}
 
 .left{
     float: left;
@@ -34,4 +35,13 @@
 
 .right{
     float: right;
+}
+ul {
+    list-style: none; /* remove the default */
+  }
+
+    li::before { 
+    display: inline-block;
+    content: 'ᐅ';  
+    color: rgb(247, 225, 33) ;
 }
