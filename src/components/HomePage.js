@@ -24,9 +24,9 @@ const HomePage = (props) => {
     return { __html: parsedModalData.textContent };
   }
 
-  const tooltipData = () =>{
+  const tooltipData = () => {
     let rawTootltip = COVID19ModalToolTips1;
-    let parsedTooltip = document.createElement('textarea');    
+    let parsedTooltip = document.createElement('textarea');
     parsedTooltip.innerHTML = rawTootltip;
     return { __html: parsedTooltip.textContent };
   }
@@ -35,18 +35,19 @@ const HomePage = (props) => {
     <>
       <div className="container">
         <Button color="danger" onClick={toggle}> {buttonLabel} </Button>
+        
         <Modal isOpen={modal} toggle={toggle} >
 
           <ModalHeader toggle={toggle} className="headerClass"> {COVID19ModalHeaderText} </ModalHeader>
 
           <ModalBody>
             <div dangerouslySetInnerHTML={modalData()} />
-            <Tooltip placement="right" isOpen={tooltipOpen} target="symptoms" toggle={toolTip} className = "tooltipStyle"> <div dangerouslySetInnerHTML={tooltipData()} /> </Tooltip>
-            <Button outline color="primary" size="md-bold" onClick={toggle} className = "buttonStyle"> {COVID19ModalButtonText} </Button>
+            <Tooltip placement="right" isOpen={tooltipOpen} target="symptoms" toggle={toolTip} className="tooltipStyle"> <div dangerouslySetInnerHTML={tooltipData()} /> </Tooltip>
+            <Button outline color="primary" size="md-bold" onClick={toggle} className="buttonStyle"> {COVID19ModalButtonText} </Button>
           </ModalBody>
-        
+
         </Modal>
-      
+
       </div>
     </>
   )
