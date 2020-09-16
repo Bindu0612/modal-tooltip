@@ -3,6 +3,11 @@
     background-color: rgb(247, 225, 33)
 }
 
+.angle-bullets{
+    padding-left:0px;
+}
+
+
 .tooltip-link{
    color:blue;
    font-weight:bold
@@ -19,7 +24,20 @@
     font-weight:bold
 }
 
+.mdBody{
+    border:none;
+    width:100%;
+    height:100%;
+}
 .footer{
+    margin : 0 !important;
+    font-weight:bolder;
+    /* text-align: center; */
+    /* padding-left: 0px;
+    display: inline-block; */
+}
+
+.footer1{
     margin : 0 !important;
     font-weight:bolder;
     text-align: center;
@@ -27,15 +45,20 @@
 
 .symptoms-main{
     color:black;
-    background-color:yellow
+    background-color:black
 }
 
 .left{
     float: left;
+    width:40%;
+    height:100vh;
 }
 
 .right{
-    float: right;
+    float:right;
+    width:60%;
+    padding:15px;
+    height:10vh;
 }
 ul {
     list-style: none; /* remove the default */
@@ -43,6 +66,12 @@ ul {
 
     li::before { 
     display: inline-block;
-    content: 'ᐅ';  
+    content: '';
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid;
     color: rgb(247, 225, 33) ;
-}
+    transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  padding-left:0px
+    }
