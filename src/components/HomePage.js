@@ -7,15 +7,26 @@ const HomePage = (props) => {
   console.log(props)
   const [modal, setModal] = useState(false);
   const [tooltipOpen, setTooltipOpen] = useState(false);
+  const [tooltipOpen1, setTooltipOpen1] = useState(false);
 
 
   const toggle = () => {
     setModal(!modal);
   }
 
-  const toolTip = () => {
-    setTooltipOpen(!tooltipOpen);
+  const toolTip1= (e) => {
+    console.log(e.target.id, "tooltip1");
+    switch(e.target.id) {
+      case 'symptoms':
+        setTooltipOpen(!tooltipOpen);
+        break;
+
+      case 'contact':
+        setTooltipOpen1(!tooltipOpen1);
+        break;
+    }
   }
+
 
   const modalData = () => {
     let rawModalData = COVID19ModalText;
@@ -51,8 +62,8 @@ const HomePage = (props) => {
 
           <ModalBody className="mdBody">
             <div dangerouslySetInnerHTML={modalData()} />
-            <Tooltip placement="top" isOpen={tooltipOpen} target="symptoms" toggle={toolTip} className="tooltipStyle"> <div dangerouslySetInnerHTML={tooltipData()} /> </Tooltip>
-            <Tooltip placement="top" isOpen={tooltipOpen} target="contact" toggle={toolTip} className="tooltipStyle"> <div dangerouslySetInnerHTML={tooltipData2()} /> </Tooltip>
+            <Tooltip placement="top" isOpen={tooltipOpen}  target="symptoms" toggle={toolTip1} className="tooltipStyle"> <div dangerouslySetInnerHTML={tooltipData()} /> </Tooltip>
+            <Tooltip placement="top" isOpen={tooltipOpen1} target="contact" toggle={toolTip1} className="tooltipStyle"> <div dangerouslySetInnerHTML={tooltipData2()} /> </Tooltip>
             <Button outline color="primary" size="md-bold" onClick={toggle} className="buttonStyle"> {COVID19ModalButtonText} </Button>
           </ModalBody>
 
@@ -63,4 +74,4 @@ const HomePage = (props) => {
   )
 }
 
-export default HomePage;
+export default HomePage; 
