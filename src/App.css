@@ -23,6 +23,7 @@
     font-weight:bold
 }
 
+
 .mdBody{
     border:none;
     width:100%;
@@ -40,10 +41,11 @@
 }
 
 .symptoms-main{
-    color:black;
-    background-color:yellow;
+    /* color:fff; */
     width:100%;
-    height:100%
+    height:100%;
+    background-color: #fff;
+    color:black;
 }
 
 .left{
@@ -63,7 +65,7 @@
     text-align: right;
 }
 ul {
-    list-style: none; /* remove the default */
+    list-style: none; 
   }
 
     li::before { 
@@ -77,9 +79,9 @@ ul {
   -webkit-transform: rotate(40deg);
   padding-left:0px
     }
+
 .close-contact{
     background-color:white;
-    /* border: 1px solid #737373; */
     color:black;
 }
 

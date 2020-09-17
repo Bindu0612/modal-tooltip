@@ -4,8 +4,6 @@ export const COVID19ModalButtonText="CONTINUE";
 
 export const COVID19ModalHeaderText="We’re in this together!";
 
-export const COVID19ModalToolTips1 ="symptoms^&lt;p class='heading'&gt;COVID-19 SYMPTOMS&lt;/p&gt;&lt;div class='symptoms-main'&gt;&lt;div class='left'&gt;&lt;ul class='angle-bullets'&gt;&lt;li&gt;Chills&lt;/li&gt;&lt;li&gt;Sore throat&lt;/li&gt;&lt;li&gt;Cough&lt;/li&gt;&lt;li&gt;Loss of smell&lt;/li&gt;&lt;li&gt;Loss of taste&lt;/li&gt; &lt;li&gt;Vomiting&lt;/li&gt; &lt;/ul&gt;&lt;/div&gt;&lt;div class='right'&gt;&lt;ul class='angle-bullets'&gt;&lt;li&gt;Diarrhea&lt;/li&gt;&lt;li&gt;Severe headache&lt;/li&gt;&lt;li&gt;Fever&lt;/li&gt;&lt;li&gt;Muscle pain&lt;/li&gt;&lt;li&gt;Shortness of breath&lt;/li&gt; &lt;li&gt;Congestion or Runny nose&lt;/li&gt; &lt;/ul&gt;&lt;/div&gt;&lt;/div&gt&lt;/p&gt;";
-
-export const COVID19ModalToolTips2= "contact^&lt;p class='heading'&gt;WHAT IS CLOSE CONTACT?&lt;/p&gt;&lt;p class=' close-contact'&gt;Close contact is being within approximately six feet of a person for over 15 minutes.&lt;/p&gt;";
+export const COVID19ModalToolTips ="symptoms^&lt;p class='heading'&gt;COVID-19 SYMPTOMS&lt;/p&gt;&lt;div className='symptoms-main'&gt;&lt;div class='left'&gt;&lt;ul class='angle-bullets'&gt;&lt;li&gt;Chills&lt;/li&gt;&lt;li&gt;Sore throat&lt;/li&gt;&lt;li&gt;Cough&lt;/li&gt;&lt;li&gt;Loss of smell&lt;/li&gt;&lt;li&gt;Loss of taste&lt;/li&gt; &lt;li&gt;Vomiting&lt;/li&gt; &lt;/ul&gt;&lt;/div&gt;&lt;div class='right'&gt;&lt;ul class='angle-bullets'&gt;&lt;li&gt;Diarrhea&lt;/li&gt;&lt;li&gt;Severe headache&lt;/li&gt;&lt;li&gt;Fever&lt;/li&gt;&lt;li&gt;Muscle pain&lt;/li&gt;&lt;li&gt;Shortness of breath&lt;/li&gt; &lt;li&gt;Congestion or Runny nose&lt;/li&gt; &lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;~contact^&lt;p class='heading'&gt;WHAT IS CLOSE CONTACT?&lt;/p&gt;&lt;p&gt;Close contact is being within approximately six feet of a person for over 15 minutes.&lt;/p&gt;";
 
 export const buttonLabel = "View Modal";
