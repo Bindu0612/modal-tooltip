@@ -57,10 +57,10 @@ const HomePage = () => {
             {displayTooltip().map((markup, i) => {
               return <Tooltip placement="top" isOpen={markup.split("^")[0] === "contact" ?
                 tooltipOpen1 : tooltipOpen2} target={markup.split("^")[0]}
-                toggle={() => tooltipToggle(markup.split("^")[0])} className="tooltipStyle">
+                toggle={() => tooltipToggle(markup.split("^")[0])}>
 
                 <div dangerouslySetInnerHTML={createMarkup(markup.split("^")[1])} />
-
+                
               </Tooltip>
             })}
 

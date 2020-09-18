@@ -12,7 +12,9 @@
    font-weight:bold
 }
 .heading{
-    font-weight: bold;
+    /* font-weight: bold;
+    height:100%;
+    width:100%; */
 }
 
 .buttonStyle {
@@ -22,7 +24,6 @@
     margin-top:20px;
     font-weight:bold
 }
-
 
 .mdBody{
     border:none;
@@ -41,31 +42,35 @@
 }
 
 .symptoms-main{
-    /* color:fff; */
+    /* color:black; */
+    background-color:yellow !important;
     width:100%;
     height:100%;
-    background-color: #fff;
-    color:black;
+    opacity:1;
 }
 
 .left{
     float: left;
-    width:50%;
-    height:10%;
+    width:40%;
+    height:100%;
     margin-left:0px !important;
+    margin-right:0px !important;
     text-align: left;
+    /* color:black; */
+    /* background-color: yellow; */
 }
 
 .right{
-    float:right;
-    width:50%;
+    float:left;
+    width:60%;
     margin-left:0px !important;
     margin-right:0px !important;
-    height:10%;
-    text-align: right;
+    height:100%;
+    text-align: left;
+    padding-left: 30px;
 }
 ul {
-    list-style: none; 
+    list-style: none; /* remove the default */
   }
 
     li::before { 
@@ -80,18 +85,17 @@ ul {
   padding-left:0px
     }
 
-.close-contact{
-    background-color:white;
-    color:black;
-}
+    /* .close-contact{
+        background-color: white;
+        color:black;
+    } */
 
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: white;
-    color: black;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    margin: 4px 121px 0 5px;
-}
+    .tooltip-link{
+        cursor: pointer;
+    }
+
+    .tooltip-inner{
+        color:black;
+        border:3px solid blue;
+        background-color: white;
+    }
