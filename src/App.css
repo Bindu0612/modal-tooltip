@@ -3,6 +3,14 @@
     background-color: rgb(247, 225, 33)
 }
 
+.modal-body {
+    position: relative;
+    flex: 1 1 auto ;
+    padding: 1rem;
+    margin-top: 15px;
+    max-width:500px;
+}
+
 .angle-bullets{
     padding-left:0px;
 }
@@ -11,6 +19,7 @@
    color:blue;
    font-weight:bold
 }
+
 .heading{
     font-weight: bold;
     margin-bottom: 6px;
@@ -24,23 +33,28 @@
     font-weight:bold
 }
 
-.footer{
-    margin : 0 !important;
-    font-weight:bolder;
+.footer {
+    margin: 0 !important;
+    font-weight: bolder;
+    max-width: 620px;
 }
 
-.footer1{
-    margin : 0 !important;
-    font-weight:bolder;
+.footer1 {
+    font-weight: bolder;
     text-align: center;
+    max-width: 435px;
+    padding-left: 9px;
+    margin-left: -7px;
+}
+
+li{
+    padding-top:6px;
+    margin-left:3px;
 }
 
 .symptoms-main{
-display: flex;
-height:100%;
-width:100%;
-opacity:1;
-margin-bottom: -16px;
+    display: flex;
+    margin-bottom: -16px;
 }
 
 .left{
@@ -60,8 +74,10 @@ margin-bottom: -16px;
     text-align: left;
     padding-left: 30px;
 }
+
 ul {
-    list-style: none; 
+    list-style: none;     
+    margin-top:3px;
   }
 
     li::before { 
@@ -72,13 +88,12 @@ ul {
 	border-bottom: 10px solid;
     color: rgb(247, 225, 33) ;
     transform: rotate(40deg);
-  -webkit-transform: rotate(40deg);
-  padding-left:0px
+    -webkit-transform: rotate(40deg);
+    padding-left:0px;
     }
     
     .tooltip-link{
         color: cornflowerblue;
-        /* cursor: pointer; */
     }
 
     .tooltip-inner {
@@ -91,7 +106,7 @@ ul {
         color:black !important;
         border: 2px solid #00c4b3;
     } 
-    
+
     .tooltip.show {
         opacity: 1 !important;
     }

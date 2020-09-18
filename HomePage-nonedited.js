@@ -59,3 +59,31 @@ const HomePage = (props)=>{
 }
 
 export default HomePage;
+
+
+old CSS
+.footer{
+  margin : 0 !important;
+  font-weight:bolder;
+  max-width: 440px;
+}
+
+.footer1{
+  margin : 0 !important;
+  font-weight:bolder;
+  text-align: center;
+  max-width: 440px;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+ /* width: 640px !important; */
+}

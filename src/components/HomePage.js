@@ -33,11 +33,10 @@ const HomePage = () => {
   }
 
   const displayTooltip = () => {
-    console.log("second");
-    let rawTootltip2 = COVID19ModalToolTips;
-    let parsedTooltip2 = document.createElement('textarea');
-    parsedTooltip2.innerHTML = rawTootltip2;
-    let seperatedData = rawTootltip2.split('~');
+    let tootlTip = COVID19ModalToolTips;
+    let parsedTooltip = document.createElement('textarea');
+    parsedTooltip.innerHTML = tootlTip;
+    let seperatedData = tootlTip.split('~');
     return seperatedData;
   }
 
@@ -58,17 +57,13 @@ const HomePage = () => {
               return <Tooltip placement="top" isOpen={markup.split("^")[0] === "contact" ?
                 tooltipOpen1 : tooltipOpen2} target={markup.split("^")[0]}
                 toggle={() => tooltipToggle(markup.split("^")[0])}>
-
                 <div dangerouslySetInnerHTML={createMarkup(markup.split("^")[1])} />
-
               </Tooltip>
             })}
-
             <Button outline color="primary" size="md-bold" onClick={toggle} className="buttonStyle">
               {COVID19ModalButtonText}
             </Button>
           </ModalBody>
-
         </Modal>
       </div>
     </>
