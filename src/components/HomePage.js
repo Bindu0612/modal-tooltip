@@ -50,7 +50,7 @@ const HomePage = () => {
 
           <ModalHeader toggle={toggle} className="headerClass"> {COVID19ModalHeaderText} </ModalHeader>
 
-          <ModalBody className="mdBody">
+          <ModalBody>
 
             <div dangerouslySetInnerHTML={modalData()} />
 
@@ -60,7 +60,7 @@ const HomePage = () => {
                 toggle={() => tooltipToggle(markup.split("^")[0])}>
 
                 <div dangerouslySetInnerHTML={createMarkup(markup.split("^")[1])} />
-                
+
               </Tooltip>
             })}
 
