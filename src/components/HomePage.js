@@ -45,7 +45,7 @@ const HomePage = () => {
       <div className="container">
         <Button color="danger" onClick={toggle}> {buttonLabel} </Button>
 
-        <Modal isOpen={modal} toggle={toggle} >
+        <Modal className= "modal-dialog-centered" isOpen={modal} toggle={toggle} >
 
           <ModalHeader toggle={toggle} className="headerClass"> {COVID19ModalHeaderText} </ModalHeader>
 
@@ -60,7 +60,7 @@ const HomePage = () => {
                 <div dangerouslySetInnerHTML={createMarkup(markup.split("^")[1])} />
               </Tooltip>
             })}
-            <Button outline color="primary" size="md-bold" onClick={toggle} className="buttonStyle">
+            <Button outline color="primary" size="md-bold" onClick={toggle} className="buttonStyle offset-3 col-5">
               {COVID19ModalButtonText}
             </Button>
           </ModalBody>

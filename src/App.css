@@ -8,7 +8,10 @@
     flex: 1 1 auto ;
     padding: 1rem;
     margin-top: 15px;
-    max-width:500px;
+}
+
+.modal-content {
+    width:745px !important;
 }
 
 .angle-bullets{
@@ -26,17 +29,23 @@
 }
 
 .buttonStyle {
-    width: 50%;
-    margin: 0 100px 0 100px;
     border-radius: 0 !important;
-    margin-top:20px;
-    font-weight:bold
+    font-weight: bold;
 }
+
 
 .footer {
     margin: 0 !important;
     font-weight: bolder;
-    max-width: 620px;
+}
+.acknowledgeFooter{
+    justify-content:center;
+}
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 745px !important;
+}
 }
 
 .footer1 {
